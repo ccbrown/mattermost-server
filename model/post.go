@@ -72,9 +72,10 @@ type PostForIndexing struct {
 }
 
 type PostAction struct {
-	Id          string                 `json:"id"`
-	Name        string                 `json:"name"`
-	Integration *PostActionIntegration `json:"integration,omitempty"`
+	Id           string                 `json:"id"`
+	Name         string                 `json:"name"`
+	Integration  *PostActionIntegration `json:"integration,omitempty"`
+	SlashCommand string                 `json:"slash_command,omitempty"`
 }
 
 type PostActionIntegration struct {
